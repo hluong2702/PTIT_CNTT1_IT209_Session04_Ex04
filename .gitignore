@@ -1,0 +1,40 @@
+# ==============================================================================
+# Git Ignore Configuration - Session 04 Exercise 4
+# Quản lý tệp tin bỏ qua (.gitignore) và Bảo mật mã nguồn
+# ==============================================================================
+
+# Sensitive Information & Credentials (Bảo mật thông tin xác thực)
+credentials.txt
+*.env
+*.env.*
+*.key
+*.pem
+*.pfx
+secrets/
+id_rsa
+id_ed25519
+
+# macOS System Files (Tệp rác hệ điều hành macOS)
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDE & Editor Configurations (Cấu hình môi trường phát triển cá nhân)
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs & Runtime Data (Nhật ký và dữ liệu thực thi)
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Dependencies & Build Artifacts (Thư viện phụ thuộc và sản phẩm build)
+node_modules/
+dist/
+build/
+__pycache__/
+*.py[cod]
